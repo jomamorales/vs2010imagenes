@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06B4C7B4-7D39-4BF7-88B3-57E7E077021D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyProject</RootNamespace>
+    <AssemblyName>MyProject</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\Desktop\EMGE\SITMv2\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\..\..\..\..\Desktop\EMGE\SITMv2\itextsharp\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.Ribbon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\EMGE\SITMv2\System.Windows.Forms.Ribbon\RibbonDemo\bin\Release\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministrarMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarMensaje.Designer.cs">
+      <DependentUpon>AdministrarMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDoperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDoperador.Designer.cs">
+      <DependentUpon>IDoperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L_canal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L_canal.Designer.cs">
+      <DependentUpon>L_canal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L_clasiSeg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L_clasiSeg.Designer.cs">
+      <DependentUpon>L_clasiSeg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L_facil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L_facil.Designer.cs">
+      <DependentUpon>L_facil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L_proce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L_proce.Designer.cs">
+      <DependentUpon>L_proce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L_prom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L_prom.Designer.cs">
+      <DependentUpon>L_prom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L_transmi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L_transmi.Designer.cs">
+      <DependentUpon>L_transmi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeRecibido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MensajeRecibido.Designer.cs">
+      <DependentUpon>MensajeRecibido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoMensaje.Designer.cs">
+      <DependentUpon>NuevoMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarMensaje.Designer.cs">
+      <DependentUpon>GenerarMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensajes Militares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensajes Militares.Designer.cs">
+      <DependentUpon>Mensajes Militares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2Principal.Designer.cs">
+      <DependentUpon>2Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestRibbon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestRibbon.Designer.cs">
+      <DependentUpon>TestRibbon.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdministrarMensaje.resx">
+      <DependentUpon>AdministrarMensaje.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarMensaje.resx">
+      <DependentUpon>GenerarMensaje.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDoperador.resx">
+      <DependentUpon>IDoperador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L_canal.resx">
+      <DependentUpon>L_canal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L_clasiSeg.resx">
+      <DependentUpon>L_clasiSeg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L_facil.resx">
+      <DependentUpon>L_facil.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L_proce.resx">
+      <DependentUpon>L_proce.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L_prom.resx">
+      <DependentUpon>L_prom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L_transmi.resx">
+      <DependentUpon>L_transmi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MensajeRecibido.resx">
+      <DependentUpon>MensajeRecibido.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensajes Militares.resx">
+      <DependentUpon>Mensajes Militares.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoMensaje.resx">
+      <DependentUpon>NuevoMensaje.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2Principal.resx">
+      <DependentUpon>2Principal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1Principal.resx">
+      <DependentUpon>1Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recibido.resx">
+      <DependentUpon>Recibido.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TestRibbon.resx">
+      <DependentUpon>TestRibbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="1Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1Principal.Designer.cs">
+      <DependentUpon>1Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recibido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recibido.Designer.cs">
+      <DependentUpon>Recibido.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Downloads\OpenPop.NET 2.0.4\source\OpenPop\OpenPop.csproj">
+      <Project>{75B3E0DF-61C3-4643-AB47-DBE1CFE3D303}</Project>
+      <Name>OpenPop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1\Helpers.csproj">
+      <Project>{B752882B-ABAD-4402-AEE8-862032E205E7}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
